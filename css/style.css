@@ -27,13 +27,14 @@ header {
     font-family: 'Montserrat', sans-serif;
     color: #f7f0fa;
     background-color: #a0d2eb;
-    padding: 10px;
+    padding: 1rem;
     font-weight: bold;
     
 }
 
 header ul li a {
     color: #f7f0fa;
+    text-decoration: none;
 }
 
 main {
@@ -49,6 +50,7 @@ footer {
 
 footer ul li a {
     color: #f7f0fa;
+    text-decoration: none;
 }
 
 section div {
@@ -56,33 +58,31 @@ section div {
     background-color: #8458B3;
 }
 
-a {
-    text-decoration: none;
-}
-
-
 /* Flexbox code*/
 
 ul {
     list-style: none;
- }
- li {
+}
+
+li {
     display: inline-block;
     width: 18%;
     position:relative;
-    font-size: 14px
- }
- ul ul {
+}
+
+ul ul {
     position: absolute;
     display: none;
- }
- ul ul li {
+}
+
+ul ul li {
     display: block;
- }
- ul li:hover ul {
+}
+
+ul li:hover ul {
     display:block;
- }
- 
+}
+
 
 
 /** classes **/
