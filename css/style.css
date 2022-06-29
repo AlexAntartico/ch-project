@@ -1,0 +1,72 @@
+/**
+Ice Cold: #f7f0fa
+
+light bluish: #a0d2eb
+
+Purple: #d0bdf4
+
+Strong purple: #8458B3
+
+blackish purple: #1f1137
+
+meh?: #a28089
+
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif;
+
+**/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: #f7f0fa;
+}
+
+header {
+    font-family: 'Roboto', sans-serif;
+    color: #f7f0fa;
+    background-color: #a0d2eb;
+}
+
+main {
+    font-family: 'Roboto Slab', serif;
+}
+
+footer {
+    font-family: 'Roboto', sans-serif;
+    color: #f7f0fa;
+    background-color: #1f1137;    
+}
+
+section div {
+    color: #f7f0fa;
+    background-color: #8458B3;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+/** classes **/
+
+.cardPrincipal {
+    color: #1f1137;
+}
+
+.navclass {
+    list-style: none;
+}
+
+/** ID's **/
+#parrafoEjemplo {
+    color: aqua;
+}
