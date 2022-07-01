@@ -21,8 +21,10 @@ font-family: 'Roboto Slab', serif;  # text that needs to be rea
 
 main {
     background-color: #f7f0fa;
+    font-family: 'Roboto Slab', serif;
 }
 
+/** Header properties **/
 header {
     font-family: 'Montserrat', sans-serif;
     color: #f7f0fa;
@@ -32,14 +34,12 @@ header {
     
 }
 
-header ul li a {
+header nav ul li a {
     color: #f7f0fa;
     text-decoration: none;
 }
 
-main {
-    font-family: 'Roboto Slab', serif;
-}
+
 
 footer {
     font-family: 'Montserrat', sans-serif;
