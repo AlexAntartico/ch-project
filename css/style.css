@@ -8,8 +8,9 @@ meh?: #a28089
 
 font-family: 'Montserrat', sans-serif;  # For menus
 font-family: 'Roboto Slab', serif;  # text that needs to be rea
-
 **/
+
+/** Selector universal y prop que afectan todo el doc**/
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab&display=swap');
 
@@ -19,69 +20,80 @@ font-family: 'Roboto Slab', serif;  # text that needs to be rea
     box-sizing: border-box;
 }
 
-main {
-    background-color: #f7f0fa;
-    font-family: 'Roboto Slab', serif;
+body {
+    font-family: 'Montserrat', sans-serif;
 }
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+
+/** Header and footer common properties ? **/
+
+header, footer {
+    color: #f7f0fa;
+    padding: .8rem;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+header li, footer li {
+    list-style: none;
+}
+
+header li a, footer li a {
+    color: #f7f0fa;
+    text-decoration: none;
+}
+
 
 /** Header properties **/
 header {
-    font-family: 'Montserrat', sans-serif;
-    color: #f7f0fa;
     background-color: #a0d2eb;
-    padding: 1rem;
-    font-weight: bold;
-    
+
 }
 
-header nav ul li a {
-    color: #f7f0fa;
-    text-decoration: none;
+.navbar {
+    display: flex;
+    flex-direction: row-reverse;  /** leave space for logo**/
+    flex-wrap: wrap;
+    align-items: right;
+}
+
+.navbar li {
+    padding: .5rem;
+    margin: .2rem;
+}
+
+/** Main properties **/
+
+main {
+    background-color: #f7f0fa;
 }
 
 /** Footer properties **/
 
 footer {
-    font-family: 'Montserrat', sans-serif;
-    color: #f7f0fa;
     background-color: #1f1137;
-    font-weight: bold; 
 }
 
-footer ul li a {
-    color: #f7f0fa;
-    text-decoration: none;
+/** Footer social **/
+
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
-section div {
-    color: #f7f0fa;
-    background-color: #8458B3;
+.social li {
+    padding: .5rem;
+    margin: .2rem;
 }
 
-/* Flexbox code*/
 
-ul {
-    list-style: none;
-}
 
-li {
-    display: inline-block;
-    width: 18%;
-    position:relative;
-}
-
-ul ul {
-    position: absolute;
-    display: none;
-}
-
-ul ul li {
-    display: block;
-}
-
-ul li:hover ul {
-    display:block;
-}
 
 
 
@@ -91,9 +103,6 @@ ul li:hover ul {
     color: #1f1137;
 }
 
-.navclass {
-    list-style: none;
-}
 
 /** ID's **/
 #parrafoEjemplo {
