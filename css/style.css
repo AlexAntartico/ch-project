@@ -59,9 +59,9 @@ header {
 
 .navbar {
     display: flex;
-    flex-direction: row-reverse;  /** leave space for logo**/
     flex-wrap: wrap;
     align-items: right;
+    justify-content: flex-end;  /** leave space for logo**/
 }
 
 .navbar li {
