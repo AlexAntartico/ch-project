@@ -26,8 +26,12 @@ body {
 
 h1, h2, h3 {
     text-align: center;
+    padding: .6rem;
 }
 
+figure {
+    padding: .2rem;
+}
 
 /** Header and footer common properties ? **/
 
@@ -46,7 +50,6 @@ header li a, footer li a {
     color: #f7f0fa;
     text-decoration: none;
 }
-
 
 /** Header properties **/
 header {
@@ -70,6 +73,7 @@ header {
 
 main {
     background-color: #f7f0fa;
+    padding: .3rem;  /** padding for all main **/
 }
 
 /** Footer properties **/
@@ -92,26 +96,18 @@ footer {
     margin: .2rem;
 }
 
-
-
-
-
-
 /** classes **/
 
 .cardPrincipal {
     color: #1f1137;
 }
 
-
 /** ID's **/
 #parrafoEjemplo {
     color: aqua;
 }
 
-
 /** flexbox modeling **/
-
 
 .flex-container {
     background-color: rgb(232, 208, 208);
@@ -124,4 +120,3 @@ footer {
     margin: 10px;
     
 }
-
