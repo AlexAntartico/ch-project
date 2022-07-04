@@ -60,8 +60,8 @@ header {
 .navbar {
     display: flex;
     flex-wrap: wrap;
-    align-items: right;
     justify-content: flex-end;  /** leave space for logo**/
+    align-items: center;
 }
 
 .navbar li {
