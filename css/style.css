@@ -62,7 +62,7 @@ header {
     flex-wrap: wrap;
     justify-content: flex-end;  /** leave space for logo**/
     align-items: center;
-}
+} 
 
 .navbar li {
     padding: .5rem;
