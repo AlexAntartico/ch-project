@@ -60,7 +60,7 @@ header {
 header nav ul { /** flex container **/
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;  /** leave space for logo**/
+    justify-content: flex-end;  /** left space for logo **/
     align-items: center;
 } 
 
