@@ -57,14 +57,14 @@ header {
 
 }
 
-.navbar {
+header nav ul { /** flex container **/
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;  /** leave space for logo**/
     align-items: center;
 } 
 
-.navbar li {
+header nav ul li {  /** these are flex items**/
     padding: .5rem;
     margin: .2rem;
 }
@@ -82,16 +82,14 @@ footer {
     background-color: #1f1137;
 }
 
-/** Footer social **/
-
-.social {
+footer ul {  /** leave space for logo**/
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
 
-.social li {
+footer ul li {
     padding: .5rem;
     margin: .2rem;
 }
