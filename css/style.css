@@ -64,7 +64,7 @@ header nav ul { /** flex container **/
     align-items: center;
 } 
 
-header nav ul li {  /** these are flex items**/
+header nav ul li {  /** Flex items from header nav ul**/
     padding: .5rem;
     margin: .2rem;
 }
@@ -82,14 +82,14 @@ footer {
     background-color: #1f1137;
 }
 
-footer ul {  /** leave space for logo**/
+footer ul {  /** Flex container **/
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
 
-footer ul li {
+footer ul li {  /** Flex items from footer ul**/
     padding: .5rem;
     margin: .2rem;
 }
