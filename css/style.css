@@ -55,17 +55,23 @@ header li a, footer li a {
 header {
     background-color: #a0d2eb;
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 3fr;
 }
 
 header figure { /** 1 fr flex container **/
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+header figure img {
+    padding: .1rem;
 }
 
 header nav ul { /** 4 fr flex container **/
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;  /** left space for logo **/
+    justify-content: space-around;  /** left space for logo **/
     align-items: center;
 } 
 
