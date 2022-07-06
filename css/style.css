@@ -56,10 +56,13 @@ header {
     background-color: #a0d2eb;
     display: grid;
     grid-template-columns: 1fr 4fr;
-
 }
 
-header nav ul { /** flex container **/
+header figure { /** 1 fr flex container **/
+    display: flex;
+}
+
+header nav ul { /** 4 fr flex container **/
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;  /** left space for logo **/
@@ -87,6 +90,8 @@ main {
 
 footer {
     background-color: #1f1137;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
 footer ul {  /** Flex container **/
