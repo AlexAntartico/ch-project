@@ -69,6 +69,11 @@ header nav ul li {  /** Flex items from header nav ul**/
     margin: .2rem;
 }
 
+header nav ul li a:hover {
+    color: #8458B3;
+    font-size: 1.1rem;
+}
+
 /** Main properties **/
 
 main {
@@ -92,6 +97,11 @@ footer ul {  /** Flex container **/
 footer ul li {  /** Flex items from footer ul**/
     padding: .5rem;
     margin: .2rem;
+}
+
+footer ul li a:hover {  /** hover test **/
+    color: #8458B3;
+    font-size: 1.1rem;
 }
 
 /** classes **/
