@@ -55,10 +55,10 @@ header li a, footer li a {
 header {
     background-color: #a0d2eb;
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 4fr;
 }
 
-header figure { /** 1 fr flex container **/
+header figure { /** 1fr flex container **/
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -68,7 +68,7 @@ header figure img {
     padding: .1rem;
 }
 
-header nav ul { /** 4 fr flex container **/
+header nav ul { /** 3fr flex container **/
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;  /** left space for logo **/
@@ -82,7 +82,7 @@ header nav ul li {  /** Flex items from header nav ul**/
 
 header nav ul li a:hover {
     color: #8458B3;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 /** Main properties **/
@@ -104,7 +104,7 @@ footer ul {  /** Flex container **/
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 footer ul li {  /** Flex items from footer ul**/
@@ -114,7 +114,7 @@ footer ul li {  /** Flex items from footer ul**/
 
 footer ul li a:hover {  /** hover test **/
     color: #8458B3;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 /** classes **/
