@@ -20,6 +20,13 @@ font-family: 'Roboto Slab', serif;  # text that needs to be rea
     box-sizing: border-box;
 }
 
+html {
+    font-size: 100%;
+    /** I get the 62.5% thing but looks like this is better for accessibility, also, I can resize anything I want to be x% more than 100, like h1's and so on 
+    https://stackoverflow.com/questions/6803016/css-100-font-size-100-of-what
+    **/
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -87,10 +94,50 @@ header nav ul li a:hover {
 
 /** Main properties **/
 
+/** Main is Grid container **/
 main {
     background-color: #f7f0fa;
     padding: .3rem;  /** padding for all main **/
+    display: grid;
+    grid-auto-flow:dense;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "nav section section aside";
 }
+
+main nav {
+    grid-area: nav;  /** Grid item nav **/
+}
+
+main nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: .2rem;
+}
+
+main nav li {
+    padding: 1%;
+    background-color: magenta;
+}
+
+
+
+main section {
+    grid-area: section;  /** News article section**/
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+main section article { /** Format for individual news article **/
+    padding: 2%;
+}
+
+main aside { /** Publicity, announcements **/
+    grid-area: aside;  /** Grid item aside **/
+}
+
 
 /** Footer properties **/
 
