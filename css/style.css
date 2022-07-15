@@ -65,10 +65,12 @@ header {
     grid-template-columns: 1fr 4fr;
 }
 
-header figure { /** 1fr flex container **/
+header div { /** 1fr flex container **/
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
 }
 
 header figure img {
