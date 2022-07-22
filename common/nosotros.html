@@ -9,31 +9,32 @@
 </head>
 <body>
     <header>
-        <figure>
-            <img src="../images/smallLogo.png" alt="small test logo">
-        </figure>        
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html">INICIO</a>
-                </li>
-                <li>
-                    <a href="./contacto.html">CONTACTO</a>
-                </li>
-                <li>
-                    <a href="./nosotros.html">NOSOTROS</a>
-                </li>
-                <li>
-                    <a href="./articulos.html">ARTICULOS</a>
-                </li>
-                <li>
-                    <a href="./noticias.html">NOTICIAS</a>
-                </li>
-            </ul>
+        <nav class="topnav">
+            <div class="nav_search-container">
+                <figure class="header__searchbar__container">
+                    <img src="../images/smallLogo.png" alt="small test logo">
+                </figure>
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="search"><a href="#">Search</a> </button>
+                </form>
+            </div>
+            <div class="nav_buttons_container">
+                <button><a href="#">Join</a></button>
+                <button><a href="#">Login</a></button>
+            </div>
         </nav>
     </header>
     <main>
-
+        <nav>
+            <ul>
+                <li><a href="../index.html"> INICIO</a></li>
+                <li><a href="./contacto.html">CONTACTO</a> </li>
+                <li><a href="./nosotros.html">NOSOTROS</a> </li>
+                <li><a href="./articulos.html"> ARTICULOS</a> </li>
+                <li><a href="./noticias.html">NOTICIAS</a> </li>
+            </ul>
+        </nav>
     </main>
     <footer>
         <div>

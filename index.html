@@ -9,28 +9,30 @@
 </head>
 <body>
     <header>
-        <div class="header__searchbar__container">
-            <figure class="header__searchbar__container">
-                <img src="./images/smallLogo.png" alt="small test logo">
-            </figure>
-            <form action="" >
-                <input type="text" placeholder="Search.." name="search">
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-        <div class="header__buttons__container">
-            <a href="./index.html"><button class="container__buttons">Join</button></a>
-            <a href="./common/contacto.html"><button class="container__buttons" >Login</button></a>
-        </div>
+        <nav class="topnav">
+            <div class="nav_search-container">
+                <figure class="header__searchbar__container">
+                    <img src="./images/smallLogo.png" alt="small test logo">
+                </figure>
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="search"><a href="#">Search</a> </button>
+                </form>
+            </div>
+            <div class="nav_buttons_container">
+                <button><a href="#">Join</a></button>
+                <button><a href="#">Login</a></button>
+            </div>
+        </nav>
     </header>
     <main>
-        <nav style="background-color: cyan;">
+        <nav>
                 <ul>
                     <li><a href="./index.html"> INICIO</a></li>
-                    <li>CONTACTO</li>
-                    <li>NOSOTROS</li>
-                    <li>ARTICULOS</li>
-                    <li>NOTICIAS</li>
+                    <li><a href="./common/contacto.html">CONTACTO</a> </li>
+                    <li><a href="./common/nosotros.html">NOSOTROS</a> </li>
+                    <li><a href="./common/articulos.html"> ARTICULOS</a> </li>
+                    <li><a href="./common/noticias.html">NOTICIAS</a> </li>
                 </ul>
         </nav>
         <section>

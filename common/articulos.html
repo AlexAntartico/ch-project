@@ -9,31 +9,33 @@
 </head>
 <body>
     <header>
-        <figure>
-            <img src="../images/smallLogo.png" alt="small test logo">
-        </figure>        
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html">INICIO</a>
-                </li>
-                <li>
-                    <a href="./contacto.html">CONTACTO</a>
-                </li>
-                <li>
-                    <a href="./nosotros.html">NOSOTROS</a>
-                </li>
-                <li>
-                    <a href="./articulos.html">ARTICULOS</a>
-                </li>
-                <li>
-                    <a href="./noticias.html">NOTICIAS</a>
-                </li>
-            </ul>
+        <nav class="topnav">
+            <div class="nav_search-container">
+                <figure class="header__searchbar__container">
+                    <img src="../images/smallLogo.png" alt="small test logo">
+                </figure>
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="search"><a href="#">Search</a> </button>
+                </form>
+            </div>
+            <div class="nav_buttons_container">
+                <button><a href="#">Join</a></button>
+                <button><a href="#">Login</a></button>
+            </div>
         </nav>
     </header>
     <main>
-        <article>
+        <nav>
+            <ul>
+                <li><a href="../index.html"> INICIO</a></li>
+                <li><a href="./contacto.html">CONTACTO</a> </li>
+                <li><a href="./nosotros.html">NOSOTROS</a> </li>
+                <li><a href="./articulos.html"> ARTICULOS</a> </li>
+                <li><a href="./noticias.html">NOTICIAS</a> </li>
+            </ul>
+        </nav>
+        <section>
             <h1>Solucion de Problems</h1>
             <p>Siempre he creido que existen dos tipos de trabajos: los que resuelven problemas y los que los crean, lo cual es ironico ya que esto en si es un problema. Por curiosidad, hoy busque en google los terminos 'problem solving' y 
             'resolucion de problemas' obteniendo el asombroso y nada sorprendente resultado de: 
@@ -52,10 +54,9 @@
                 <figure>
                     <img src="../images/res1.png" alt="91,200,000 de resultados arrojo google al buscar el termino "resolucion de problemas"">
                 </figure>
-
             </ul><br>
             
-        </article>
+        </section>
 
     </main>
     <footer>

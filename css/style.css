@@ -53,29 +53,50 @@ header, footer {
 header {
     background-color: #a0d2eb;
     display: grid;
-    grid-template-columns: 2fr 2fr;
 }
 
-.header__logosearchbar__container { /** 2fr flex container **/
+.topnav {
     display: flex;
     flex-wrap: wrap;
-    justify-content:flex-start ;
-    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav_search-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav_buttons_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
 }
 
-.header__buttons__container { /** 2fr flex container **/
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: flex-end;  /** left space for logo **/
-    align-items: center;
-} 
-
-.container__buttons {
+button {
+    background-color: #a0d2eb;
     border: none;
-    border-radius: 2.5rem;
+    border-radius: .75rem;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    padding: 1.2rem;
 }
+
+button a {
+    text-decoration: none;
+    color: #f7f0fa;
+}
+
+
+nav button:hover {
+	background:linear-gradient(to bottom, #1f1137 5%, #a0d2eb 100%);
+	background-color:#1f1137;
+}
+
 
 
 /** Main properties **/
@@ -93,6 +114,8 @@ main {
 
 main nav {
     grid-area: nav;  /** Grid item nav **/
+    background-color: #d0bdf4;
+    
 }
 
 main nav ul {
@@ -104,7 +127,17 @@ main nav ul {
 
 main nav li {
     padding: 1%;
-    background-color: magenta;
+    
+}
+
+main nav li a {
+    text-decoration: none;
+    color: #f7f0fa;
+    font-weight: bold;
+}
+
+main nav li a:active {
+    background-color:#1f1137;
 }
 
 main section {
