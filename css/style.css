@@ -1,188 +1,157 @@
-/**
-Ice Cold: #f7f0fa
-light bluish: #a0d2eb
-Purple: #d0bdf4
-Strong purple: #8458B3
-blackish purple: #1f1137
-meh?: #a28089
+/*
+Color palette:
 
-font-family: 'Montserrat', sans-serif;  # For menus
-font-family: 'Roboto Slab', serif;  # text that needs to be rea
-**/
+#0D0D0D
+#05AFF2
+#0487D9
+#BF216B
+#F2295F
 
-/** Selector universal y prop que afectan todo el doc**/
+Background image py Pawel Nolbert: https://unsplash.com/@hellocolor
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:500&family=Roboto+Slab&display=swap');
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Roboto Serif', serif;
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+*/
 
-html {
-    font-size: 100%;
-    /** I get the 62.5% thing but looks like this is better for accessibility, also, I can resize anything I want to be x% more than 100, like h1's and so on 
-    https://stackoverflow.com/questions/6803016/css-100-font-size-100-of-what
-    **/
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,700;1,400&family=Roboto+Serif:opsz,wght@8..144,400;8..144,700&family=Roboto:ital,wght@0,400;1,700&display=swap');
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
 }
 
-h1, h2, h3 {
-    text-align: center;
-    padding: .6rem;
+a {
+    text-decoration: none;
+    color: #0D0D0D;
 }
 
-figure {
-    padding: .2rem;
-}
-
-/** Header and footer common properties ? **/
-
-header, footer {
-    color: #f7f0fa;
-    padding: .8rem;
-    font-weight: bold;
-    font-size: 1rem;
-}
-
-/** Header properties **/
 header {
-    background-color: #a0d2eb;
+    width: 100%;
+    height: 9rem;
     display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    font-family: 'Roboto', sans-serif;
 }
 
-.topnav {
+/* header top to bottom */
+
+header .header-icons-container {
+    width: 100%;
+    height: 4rem;
+    display: grid;
+    background-color: #0D0D0D;
+}
+
+/* Siento que es un poco de trampa ponerle un default de
+320 px al contenedor y asi ahorrarme el tener que hacer
+un responsive header pero hey! funciona en este caso*/
+
+header .header-icons-container div {
+    padding: .5rem;
+    width: 20rem;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
+    justify-items: flex-end;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-evenly;
+    justify-self: end;
+    margin-right: 3rem;
 }
 
-.nav_search-container {
+.fa-brands {
+    color: #05AFF2;
+    font-size: 2rem;
+}
+
+.fa-brands:hover {
+    color: #F2295F;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 5rem;
+}
+
+nav .nav-logo-container {
+    margin-left: 3rem;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-evenly;
 }
 
-.nav_buttons_container {
+nav .nav-logo-container img {
+    width: 4rem;
+    margin-top: .8rem;
+}
+
+nav .profile-link {
+    margin-right: 3rem;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
     align-items: center;
+    justify-content: flex-end;
 }
 
-button {
-    background-color: #a0d2eb;
+nav .profile-link a {
+    color: #0D0D0D;
+    border-bottom: 1px solid #0D0D0D;
+}
+
+/* main */
+
+.index-main {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    height: 100%;
+    background-image: url(../images/pawel-nolbert-62OK9xwVA0c-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Background image py Pawel Nolbert: https://unsplash.com/@hellocolor */
+
+}
+
+.index-main section {
+    display: grid;
+    grid-column: 2;
+    justify-items: center;
+    height: 20rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.index-main section h1 {
+    font-family: 'Roboto Mono', monospace;
+    color: whitesmoke;
+    font-size: 2rem;
+    letter-spacing: .5rem;
+    text-align: center;
+}
+
+.index-main section a {
     border: none;
     border-radius: .75rem;
-    cursor: pointer;
+    padding: 1rem;
+    width: 7rem;
+    height: 4rem;
+    display: flex;
     text-align: center;
-    font-weight: bold;
-    padding: 1.2rem;
-}
-
-button a {
-    text-decoration: none;
-    color: #f7f0fa;
-}
-
-
-nav button:hover {
-	background:linear-gradient(to bottom, #1f1137 5%, #a0d2eb 100%);
-	background-color:#1f1137;
-}
-
-
-
-/** Main properties **/
-
-/** Main is Grid container **/
-main {
-    background-color: #f7f0fa;
-    padding: .3rem;  /** padding for all main **/
-    display: grid;
-    grid-auto-flow:dense;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-areas: 
-    "nav section section section section aside";
-}
-
-main nav {
-    grid-area: nav;  /** Grid item nav **/
-    background-color: #d0bdf4;
-    
-}
-
-main nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    padding: .2rem;
-}
-
-main nav li {
-    padding: 1%;
-    
-}
-
-main nav li a {
-    text-decoration: none;
-    color: #f7f0fa;
-    font-weight: bold;
-}
-
-main nav li a:active {
-    background-color:#1f1137;
-}
-
-main section {
-    grid-area: section;  /** News article section**/
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-
-main section article { /** Format for individual news article **/
-    padding: 2%;
-}
-
-main aside { /** Publicity, announcements **/
-    grid-area: aside;  /** Grid item aside **/
-}
-
-
-/** Footer properties **/
-
-footer {
-    background-color: #1f1137;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-}
-
-footer ul {  /** Flex container **/
-    display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    background-color: #05AFF2;
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
-footer ul li {  /** Flex items from footer ul**/
-    padding: .5rem;
-    margin: .2rem;
-    list-style: none;
+.index-main section a:hover {
+    background-color: #F2295F;
+    cursor: pointer;
 }
 
-footer ul li a {
-    color: #f7f0fa;
-    text-decoration: none;
-}
-
-footer ul li a:hover {  /** hover test **/
-    color: #8458B3;
-    font-size: 1rem;
-}
