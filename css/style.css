@@ -59,7 +59,7 @@ header .header-icons-container div {
     justify-content: space-between;
     align-items: center;
     justify-self: end;
-    margin-right: 3rem;
+    margin-right: 2.5rem;
 }
 
 .fa-brands {
@@ -78,7 +78,7 @@ nav {
 }
 
 nav .nav-logo-container {
-    margin-left: 3rem;
+    margin-left: 2.5rem;
     display: flex;
     align-items: center;
 }
@@ -89,7 +89,7 @@ nav .nav-logo-container img {
 }
 
 nav .profile-link {
-    margin-right: 3rem;
+    margin-right: 2.5rem;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -104,7 +104,7 @@ nav .profile-link a:hover {
     border-bottom: 2px solid #0D0D0D;
 }
 
-/* index main */
+/* index.html main */
 
 .index-main {
     display: grid;
@@ -168,7 +168,8 @@ footer {
 }
 
 .footer-contact-containers {
-    margin: 0 3rem 0 3rem;
+    margin: 0 2.5rem 0 2.5rem;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-self: center;
@@ -180,14 +181,18 @@ footer {
     margin: 0 2rem 0 2rem;
 }
 
+footer .footer-love {
+    background-color: #0D0D0D;
+    height: auto;
+}
+
 footer .footer-love h3{
     text-align: center;
     color: whitesmoke;
-    background-color: #0D0D0D;
-    padding: 1rem;
-
+    cursor: pointer;
 }
 
 .fa-heart {
     color: red;
 }
+
