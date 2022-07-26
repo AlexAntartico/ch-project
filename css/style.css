@@ -7,8 +7,6 @@ Color palette:
 #BF216B
 #F2295F
 
-Background image py Pawel Nolbert: https://unsplash.com/@hellocolor
-
 font-family: 'Roboto', sans-serif;
 font-family: 'Roboto Mono', monospace;
 font-family: 'Roboto Serif', serif;
@@ -102,7 +100,7 @@ nav .profile-link a {
     border-bottom: 1px solid #0D0D0D;
 }
 
-/* main */
+/* index main */
 
 .index-main {
     display: grid;
