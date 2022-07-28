@@ -198,7 +198,6 @@ footer .footer-love h3{
     color: red;
 }
 
-
 /* blogs.html main */
 
 .blogs-body {
@@ -211,10 +210,8 @@ footer .footer-love h3{
     display: grid;
 }
 
-
-
 .featured-blog-container { /* contains featured blog entry*/
-    border: .5rem solid #05AFF2;
+    border: .5rem solid #0487D9;
     border-radius: .75rem;
     margin: 0 2.5rem 0 2.5rem;
     padding: .2rem;
@@ -225,8 +222,6 @@ footer .footer-love h3{
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 2fr;
 }
-
-
 
 .featured-img-container picture {
     grid-column: 1;
@@ -242,21 +237,46 @@ footer .footer-love h3{
 
 .featured-description-container {
     grid-column: 2;
+    margin-bottom: 1rem;
 }
 
 .featured-description-container p {
     margin-bottom: 2rem;
 }
 
+.latest-blog-containers div {
+    margin: 0 2.5rem 0 2.5rem;
+}
 
 .latest-blog-containers div h3 {
     text-align: center;
 }
 
-
 .mini-blog-container {
-
+    display: flex;
+    flex-wrap: wrap;
 }
+
+.blog-button {
+    border: none;
+    border-radius: .6rem;
+    width: 6rem;
+    height: 3rem;
+    display: flex;
+    padding: 0 .2rem 0 .2rem;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #0487D9;
+    color: whitesmoke;
+    font-size: 1rem;
+}
+
+.blog-button:hover {
+    background-color: #BF216B;
+    cursor: pointer;
+}
+
 
 
 
@@ -265,4 +285,3 @@ footer .footer-love h3{
 .main-form {
     margin: 0 2.5rem 0 2.5rem;
 }
-
