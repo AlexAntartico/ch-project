@@ -201,9 +201,17 @@ footer .footer-love h3{
 
 /* blogs.html main */
 
+.blogs-body {
+    position:inherit;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
 .main-blogs {
     display: grid;
 }
+
+
 
 .featured-blog-container { /* contains featured blog entry*/
     border: .5rem solid #05AFF2;
@@ -229,7 +237,7 @@ footer .footer-love h3{
 
 .featured-img-container picture img {
     width: 80%;
-
+    height: 80%;
 }
 
 .featured-description-container {
