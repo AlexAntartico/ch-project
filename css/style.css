@@ -24,6 +24,10 @@ body {
     font-family: 'Roboto Mono', monospace;
 }
 
+body h1, h2, h3 {
+    text-align: center;
+}
+
 a {
     text-decoration: none;
     color: #0D0D0D;
@@ -116,7 +120,6 @@ nav .profile-link a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     /* Background image py Pawel Nolbert: https://unsplash.com/@hellocolor */
-
 }
 
 .index-main section {
@@ -209,14 +212,32 @@ footer .footer-love h3{
     padding: .2rem;
 }
 
-.feat-img-container {
+.featured-img-container {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 2fr;
 }
 
-.feat-description-container {
 
+
+.featured-img-container picture {
+    grid-column: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.featured-img-container picture img {
+    width: 80%;
+
+}
+
+.featured-description-container {
+    grid-column: 2;
+}
+
+.featured-description-container p {
+    margin-bottom: 2rem;
 }
 
 
