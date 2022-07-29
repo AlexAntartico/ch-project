@@ -244,6 +244,9 @@ footer .footer-love h3{
     margin-bottom: 2rem;
 }
 
+.latest-blog-containers {
+}
+
 .latest-blog-containers div {
     margin: 0 2.5rem 0 2.5rem;
 }
@@ -277,7 +280,9 @@ footer .footer-love h3{
     cursor: pointer;
 }
 
+.mini-blog-container {
 
+}
 
 
 /* contacto.html main*/
