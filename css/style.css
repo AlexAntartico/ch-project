@@ -29,6 +29,7 @@ body {
 
 body h1, h2, h3 {
     text-align: center;
+    width: 100%;
 }
 
 a {
@@ -236,14 +237,20 @@ footer .footer-love h3{
 }
 
 .latest-blog-containers { /* Providing size to container */
-    margin: 0 2.5rem 0 2.5rem;
+    margin: 1rem 2.5rem 1rem 2.5rem;
 }
 
-.mini-blog-container {
+.latest-blog-containers div{
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    margin: 1rem 0 1rem 0;
+
+}
+
+
+
+.mini-blog-container {
+    margin: 1rem;
+    max-width: 30%;
 }
 
 .mini-blog-container p {
@@ -251,7 +258,9 @@ footer .footer-love h3{
 }
 
 .mini-blog-container img {
-    width: 100%;
+    width: 85%;
+    display: block; /*to center img dont remove*/
+    margin: 0 auto; /*to center img dont remove*/
 }
 
 .blog-button { /* Generic Button*/
