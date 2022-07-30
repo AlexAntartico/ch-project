@@ -257,6 +257,10 @@ footer .footer-love h3{
     align-items: center;
 }
 
+.mini-blog-container h3 {
+    color: #BF216B;
+}
+
 .mini-blog-container p {
     margin: .8rem .8rem;
 }
@@ -271,7 +275,7 @@ footer .footer-love h3{
     border: none;
     border-radius: .6rem;
     padding: 1rem 2rem;
-    background-color: #0487D9;
+    background-color: #05AFF2;
     color: whitesmoke;
     font-size: 1rem;
     text-align: center;
@@ -281,7 +285,7 @@ footer .footer-love h3{
 }
 
 .blog-button:hover {
-    background-color: #BF216B;
+    background-color: #F2295F;
     cursor: pointer;
 }
 
