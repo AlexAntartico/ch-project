@@ -203,9 +203,9 @@ footer .footer-love h3{
 }
 
 .featured-blog-container { /* contains featured blog entry*/
-    border: .5rem solid #0487D9;
-    border-radius: .75rem;
-    margin: 0 2.5rem 0 2.5rem;
+    width: 100%;
+    background-color: #0487D9;
+    color: whitesmoke;
     padding: .2rem;
 }
 
@@ -232,8 +232,21 @@ footer .footer-love h3{
     margin-bottom: 1rem;
 }
 
+.feature-blog-button {
+    border: none;
+    border-radius: .6rem;
+    padding: 1rem 2rem;
+    background-color: whitesmoke;
+    color: #05AFF2;
+    font-size: 1rem;
+    text-align: center;
+    align-self: flex-start;
+    margin-top: auto;
+    margin-left: 2.5rem;
+}
+
 .featured-description-container p {
-    margin-bottom: 2rem;
+    margin: 0 2.5rem 0 2.5rem;
 }
 
 .latest-blog-containers { /* Providing size to container */
@@ -246,6 +259,7 @@ footer .footer-love h3{
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 100%;
+    margin-top: 1rem;
 }
 
 .mini-blog-container {
