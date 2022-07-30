@@ -238,27 +238,31 @@ footer .footer-love h3{
 
 .latest-blog-containers { /* Providing size to container */
     margin: 1rem 2.5rem 1rem 2.5rem;
+    display: inline-block;
 }
 
 .latest-blog-containers div{
     display: flex;
     flex-wrap: wrap;
-
+    justify-content: space-between;
+    max-width: 100%;
 }
 
-
-
 .mini-blog-container {
-    margin: 1rem;
+    margin: 1rem 0;
     max-width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
 }
 
 .mini-blog-container p {
-    margin-bottom: 2rem;
+    margin: .8rem .8rem;
 }
 
 .mini-blog-container img {
-    width: 85%;
+    width: 90%;
     display: block; /*to center img dont remove*/
     margin: 0 auto; /*to center img dont remove*/
 }
@@ -266,16 +270,14 @@ footer .footer-love h3{
 .blog-button { /* Generic Button*/
     border: none;
     border-radius: .6rem;
-    width: 6rem;
-    height: 3rem;
-    padding: 0 .2rem 0 .2rem;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: space-around;
+    padding: 1rem 2rem;
     background-color: #0487D9;
     color: whitesmoke;
     font-size: 1rem;
+    text-align: center;
+    align-self: flex-start;
+    margin-top: auto;
+    margin-left: 1rem;
 }
 
 .blog-button:hover {
