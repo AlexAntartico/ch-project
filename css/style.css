@@ -209,6 +209,12 @@ footer .footer-love h3{
     padding: .2rem;
 }
 
+.featured-grid-container {
+    max-width: 980px;
+    margin: auto;
+}
+
+
 .featured-img-container {
     display: grid;
     grid-template-columns: 2fr 1fr;
