@@ -15,6 +15,9 @@ font-family: 'Roboto Serif', serif;
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Roboto+Serif:opsz,wght@8..144,400;8..144,700&family=Roboto:wght@400;700&display=swap');
 
+/* global css */
+
+
 body {
     padding: 0;
     margin: 0;
@@ -33,9 +36,7 @@ a {
     color: #0D0D0D;
 }
 
-/* header top to bottom */
-
-header {
+header { /* header top to bottom */
     width: 100%;
     height: 9rem;
     display: grid;
@@ -43,16 +44,12 @@ header {
     font-family: 'Roboto', sans-serif;
 }
 
-header .header-icons-container {
+header .header-icons-container { /* header Social icons container */
     width: 100%;
     height: 4rem;
     display: grid;
     background-color: #0D0D0D;
 }
-
-/* Siento que es un poco de trampa ponerle un default de
-320 px al contenedor y asi ahorrarme el tener que hacer
-un responsive header pero hey! funciona en este caso*/
 
 header .header-icons-container div {
     padding: .5rem;
@@ -76,7 +73,7 @@ header .header-icons-container div {
     color: #F2295F;
 }
 
-nav {
+nav { /* header logo and about me container */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     height: 5rem;
@@ -109,9 +106,7 @@ nav .profile-link a:hover {
     border-bottom: 2px solid #0D0D0D;
 }
 
-/* index.html main */
-
-.index-main {
+.index-main { /* index.html main */
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
     height: 100%;
@@ -159,9 +154,7 @@ nav .profile-link a:hover {
     cursor: pointer;
 }
 
-/* Footer */
-
-footer {
+footer { /* Footer */
     width: 100%;
     height: 8rem;
     display: grid;
@@ -198,9 +191,7 @@ footer .footer-love h3{
     color: red;
 }
 
-/* blogs.html main */
-
-.blogs-body {
+.blogs-body { /* blogs.html main */
     position:inherit;
     overflow-x: hidden;
     overflow-y: scroll;
@@ -245,22 +236,26 @@ footer .footer-love h3{
 }
 
 .latest-blog-containers {
+
+}
+
+.latest-blog-containers h3 {
+    text-align: center;
 }
 
 .latest-blog-containers div {
     margin: 0 2.5rem 0 2.5rem;
 }
 
-.latest-blog-containers div h3 {
-    text-align: center;
-}
+
 
 .mini-blog-container {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
 }
 
-.blog-button {
+.blog-button { /* Generic Button*/
     border: none;
     border-radius: .6rem;
     width: 6rem;
@@ -280,13 +275,6 @@ footer .footer-love h3{
     cursor: pointer;
 }
 
-.mini-blog-container {
-
-}
-
-
-/* contacto.html main*/
-
-.main-form {
+.main-form { /* contacto.html main*/
     margin: 0 2.5rem 0 2.5rem;
 }
