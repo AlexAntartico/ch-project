@@ -230,6 +230,9 @@ footer .footer-love h3{
 .featured-description-container {
     grid-column: 2;
     margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .feature-blog-button {
@@ -242,6 +245,7 @@ footer .footer-love h3{
     text-align: center;
     align-self: flex-start;
     margin-top: auto;
+    margin-bottom: auto;
     margin-left: 2.5rem;
 }
 
