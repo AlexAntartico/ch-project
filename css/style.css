@@ -26,7 +26,7 @@ body {
     font-family: 'Roboto Mono', monospace;
 }
 
-:is(h1, h2, h3, h4, h5, h6) {
+h1, h2, h3, h4, h5, h6 {
     text-align: center;
     width: 100%;
     letter-spacing: .3rem;
@@ -283,8 +283,8 @@ nav .profile-link a:hover {
 }
 
 .button-feature-blog {
-    background-color: whitesmoke;
-    color: #05AFF2;
+    background-color: #05AFF2;
+    color: whitesmoke;
     margin-bottom: auto;
     margin-left: 2.5rem;
 }
