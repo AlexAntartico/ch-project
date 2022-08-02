@@ -17,7 +17,6 @@ font-family: 'Roboto Serif', serif;
 
 /* global css */
 
-
 body {
     padding: 0;
     margin: 0;
@@ -79,8 +78,8 @@ header .header-icons-container div {
     color: #5c0a0a;
 }
 
-[class*=button] {
-    transition: all 1s;
+[class*=button] { /* Buttons have same structure just change color */
+    transition: all 500ms;
     border: none;
     border-radius: .6rem;
     padding: 1rem 2rem;
@@ -88,6 +87,13 @@ header .header-icons-container div {
     text-align: center;
     align-self: flex-start;
     margin-top: auto;
+}
+
+
+[class*=button]:hover { /* any button will have this hover effect */
+    background-color: #F2295F;
+    color: whitesmoke;
+    cursor: pointer;
 }
 
 /*header*/
@@ -232,7 +238,6 @@ footer .footer-love h3{
     margin: auto;
 }
 
-
 .featured-img-container {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -267,13 +272,6 @@ footer .footer-love h3{
 }
 
 
-.feature-blog-button:hover {
-    background-color: #F2295F;
-    color: whitesmoke;
-    cursor: pointer;
-}
-
-
 .featured-description-container p {
     margin: 0 2.5rem 0 2.5rem;
 }
@@ -304,7 +302,6 @@ footer .footer-love h3{
     color: #BF216B;
 }
 
-
 .mini-blog-container p:first-of-type::first-letter {
     font: bold 3rem / .3 serif;
     color: #0487D9;
@@ -313,8 +310,6 @@ footer .footer-love h3{
 .mini-blog-container p {
     margin: .8rem .8rem;
 }
-
-
 
 .mini-blog-container img {
     width: 90%;
@@ -326,11 +321,6 @@ footer .footer-love h3{
     background-color: #05AFF2;
     color: whitesmoke;
     margin-left: 1rem;
-}
-
-.blog-button:hover {
-    background-color: #F2295F;
-    cursor: pointer;
 }
 
 .main-form { /* contacto.html main*/
