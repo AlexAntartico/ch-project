@@ -36,43 +36,6 @@ a {
     color: #0D0D0D;
 }
 
-header { /* header top to bottom */
-    width: 100%;
-    height: 9rem;
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    font-family: 'Roboto', sans-serif;
-}
-
-header .header-icons-container { /* header Social icons container */
-    width: 100%;
-    height: 4rem;
-    display: grid;
-    background-color: #0D0D0D;
-}
-
-header .header-icons-container div {
-    padding: .5rem;
-    width: 20rem;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-items: flex-end;
-    justify-content: space-between;
-    align-items: center;
-    justify-self: end;
-    margin-right: 2.5rem;
-}
-
-.fa-brands {
-    color: #05AFF2;
-    font-size: 2rem;
-}
-
-.fa-brands:hover {
-    color: #F2295F;
-}
-
 ::selection {
     background-color: #32CD32;
     color: #5c0a0a;
@@ -89,14 +52,81 @@ header .header-icons-container div {
     margin-top: auto;
 }
 
-
 [class*=button]:hover { /* any button will have this hover effect */
     background-color: #F2295F;
     color: whitesmoke;
     cursor: pointer;
 }
 
-/*header*/
+/* header top to bottom */
+
+header {
+    width: 100%;
+    height: 9rem;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    font-family: 'Roboto', sans-serif;
+}
+
+header .header-icons-container { /* header Social icons container */
+    width: 100%;
+    height: 4rem;
+    display: grid;
+    background-color: #0D0D0D;
+}
+
+header .header-icons-container div {
+    padding: .8rem;
+    width: 20rem;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    justify-self: end;
+    margin-right: 2.5rem;
+}
+
+.fa-brands {
+    color: #05AFF2;
+    font-size: 2.5rem;
+    box-shadow: 2px 2px 2px #301934, 10px 1px 12px #301934, 2px 2px 10px #301934, 2px 2px 3px #301934, inset 2px 2px 10px #301934, inset 2px 2px 10px #301934, inset 2px 2px 10px #301934, inset 2px 2px 10px #301934; /* paste here https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow*/
+    border-radius: 2rem; /* This creates a blurry circle*/
+    animation: animate 3s linear infinite;
+    text-shadow: 0 0 50px #3A1B2F, 0 0 100px #3A1B2F, 0 0 150px #3A1B2F, 0 0 200px #3A1B2F;
+}
+
+@keyframes animate {
+    from {
+        filter:  hue-rotate(0deg);
+    }
+    to {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.fa-brands:hover {
+    color: #F2295F;
+}
+
+.fa-twitter {
+    animation-delay: 200ms;
+}
+
+.fa-linkedin-in {
+    animation-delay: 400ms;
+}
+
+.fa-instagram {
+    animation-delay: 600ms;
+}
+
+.fa-github {
+    animation-delay: 800ms;
+}
+
+
 
 nav { /* header logo and about me container */
     display: grid;
@@ -131,7 +161,9 @@ nav .profile-link a:hover {
     border-bottom: 2px solid #0D0D0D;
 }
 
-.index-main { /* index.html main */
+/* index.html main */
+
+.index-main {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
     height: 100%;
