@@ -21,7 +21,7 @@ header {
 }
 header .header-icons-container {
   width: 100%;
-  height: 4rem;
+  height: 5rem;
   display: grid;
   background-color: #0D0D0D;
 }
@@ -133,57 +133,6 @@ footer {
   color: red;
 }
 
-/* global css */
-@keyframes animate {
-  from {
-    filter: hue-rotate(0deg);
-  }
-  to {
-    filter: hue-rotate(360deg);
-  }
-}
-body {
-  padding: 0;
-  margin: 0;
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  font-family: "Roboto Mono", monospace;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  text-align: center;
-  width: 100%;
-  letter-spacing: 0.3rem;
-}
-
-a {
-  text-decoration: none;
-  color: #0D0D0D;
-}
-
-::selection {
-  background-color: #32CD32;
-  color: #5c0a0a;
-}
-
-[class^=button] {
-  transition: all 500ms;
-  border: none;
-  border-radius: 0.6rem;
-  padding: 1rem 2rem;
-  font-size: 1rem;
-  background-color: #05AFF2;
-  color: whitesmoke;
-  text-align: center;
-  align-self: flex-start;
-  margin-top: auto;
-}
-[class^=button]:hover {
-  background-color: #F2295F;
-  cursor: pointer;
-}
-
 /*index.html main*/
 .index-main {
   display: grid;
@@ -210,10 +159,8 @@ a {
 .button-index-main {
   width: 7rem;
   height: 4rem;
-  font-size: 1.2rem;
+  font-size: 1.2rem !important;
   font-weight: 700;
-  display: flex;
-  text-align: center;
   align-items: center;
   justify-content: center;
 }
@@ -311,6 +258,58 @@ a {
 
 .button-mini-blog {
   margin-left: 1rem;
+}
+
+/* global css */
+@keyframes animate {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+body {
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Roboto Mono", monospace;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  width: 100%;
+  letter-spacing: 0.3rem;
+}
+
+a {
+  text-decoration: none;
+  color: #0D0D0D;
+}
+
+::selection {
+  background-color: #32CD32;
+  color: #5c0a0a;
+}
+
+[class^=button] {
+  transition: all 500ms;
+  border: none;
+  border-radius: 0.6rem;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  background-color: #05AFF2;
+  color: whitesmoke;
+  display: flex;
+  text-align: center;
+  align-self: flex-start;
+  margin-top: auto;
+}
+[class^=button]:hover {
+  background-color: #F2295F;
+  cursor: pointer;
 }
 
 /*contacto.html main*/

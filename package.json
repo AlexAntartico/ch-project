@@ -1,0 +1,19 @@
+{
+  "name": "ch-project",
+  "version": "1.0.0",
+  "description": "1. Sinceramente no sabia de que que hacer la pagina web. Comenze con la idea de una pagina que hablara de finanzaz ya que trabajo para una institucion financiera. Despues lo cambie a un blog personal y finalmente, mi objetivo es que no solo sea un blog personal sino un tipo de blog en espanol donde quien sea pueda publicar cualquier cosa referente principalmente a tecnologia.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexAntartico/ch-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexAntartico/ch-project/issues"
+  },
+  "homepage": "https://github.com/AlexAntartico/ch-project#readme"
+}
