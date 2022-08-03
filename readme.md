@@ -1,6 +1,8 @@
 # Personal project
 
-## Aun sin nombre
+## Blog Personal
+
+https://alexantartico.github.io/ch-project/
 
 1. Sinceramente no sabia de que que hacer la pagina web. Comenze con la idea de una pagina que hablara de finanzaz ya que trabajo para una institucion financiera. Despues lo cambie a un blog personal y finalmente, mi objetivo es que no solo sea un blog personal sino un tipo de blog en espanol donde quien sea pueda publicar cualquier cosa referente principalmente a tecnologia.
 
