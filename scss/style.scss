@@ -12,6 +12,7 @@ font-family: 'Roboto Serif', serif;
 */
 @import "https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Roboto+Serif:opsz,wght@8..144,400;8..144,700&family=Roboto:wght@400;700&display=swap";
 @import "./utilities/variables";
+@import "../utilities/mixins";
 @import "./layout/header";
 @import "./layout/footer";
 @import "./layout/main";
