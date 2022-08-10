@@ -4,8 +4,8 @@
   "description": "1. Sinceramente no sabia de que que hacer la pagina web. Comenze con la idea de una pagina que hablara de finanzaz ya que trabajo para una institucion financiera. Despues lo cambie a un blog personal y finalmente, mi objetivo es que no solo sea un blog personal sino un tipo de blog en espanol donde quien sea pueda publicar cualquier cosa referente principalmente a tecnologia.",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass ./scss/style.scss ./css/style.css",
-    "watch-css": "nodemon -e scss -x \"npm run compile:sass\""
+    "compile:sass": "node-sass ./scss/style.scss ./css/style.css -w",
+    "_watch-css": "nodemon -e scss -x \"npm run compile:sass\""
   },
   "repository": {
     "type": "git",
