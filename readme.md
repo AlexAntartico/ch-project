@@ -1,10 +1,24 @@
 # Personal project
 
+### SSL esta pendiente de instalar, puede tomar hasta 24 horas en propagarse
+
+![Pending SSL installation](./images/pending_ssl.png)
+
+https://www.edi.monster/
+
+
+o temporalmente:
+
+http://www.edi.monster/
+
+
 ## Blog Personal
 
 https://alexantartico.github.io/ch-project/
 
 1. Sinceramente no sabia de que que hacer la pagina web. Comenze con la idea de una pagina que hablara de finanzaz ya que trabajo para una institucion financiera. Despues lo cambie a un blog personal y finalmente, mi objetivo es que no solo sea un blog personal sino un tipo de blog en espanol donde quien sea pueda publicar cualquier cosa referente principalmente a tecnologia. Falta mucho para eso pero probablemente lo hare.
+
+
 
 2. Mi conocimiento actual se queda corto, pero poniendo unas cosas aqui y otras alla puede ser algo que quede listo en los proximos meses. Por ej, conozco algo de db's y podria generar una pero no conozco de logins y autenticaciones, en retrospectiva; soy muy afortunado en trabajar en un lugar donde usamos kerberos y AFS. Si no concen estas tecnologias, les invito a investigar un poco de ellas. Si un dia trabajan en un mounstro de empresa o crean una (llamenme, siempre me gustan los retos!) les van a servir mucho. Tambien existe la posibilidad de que sea algo que no se concrete nunca.
 
