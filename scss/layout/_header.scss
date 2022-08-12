@@ -6,14 +6,16 @@ header {
 		height: 5rem;
 		display: grid;
 		background-color: #0D0D0D;
-		div {
-			padding: .8rem;
+		ul {
 			width: 20rem;
 			height: auto;
 			@include flex-parameters(flex, wrap, space-between, center);
 			justify-items: flex-end;
 			justify-self: end;
 			margin-right: 2.5rem;
+			li {
+				list-style: none;
+			}
 		}
 	}
 }
@@ -40,11 +42,11 @@ header {
 .fa-github {
 	animation-delay: 800ms;
 }
-nav {
+.submenu {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	height: 5rem;
-	.nav-logo-container {
+	.submenu-logo-container {
 		margin-left: 2.5rem;
 		display: flex;
 		align-items: center;
@@ -53,7 +55,7 @@ nav {
 			margin-top: .8rem;
 		}
 	}
-	.profile-link {
+	.submenu-profile-link {
 		margin-right: 2.5rem;
 		display: flex;
 		align-items: center;
