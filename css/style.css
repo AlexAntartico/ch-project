@@ -23,8 +23,7 @@ header {
     height: 5rem;
     display: grid;
     background-color: #0D0D0D; }
-    header .header-icons-container div {
-      padding: .8rem;
+    header .header-icons-container ul {
       width: 20rem;
       height: auto;
       display: flex;
@@ -34,6 +33,8 @@ header {
       justify-items: flex-end;
       justify-self: end;
       margin-right: 2.5rem; }
+      header .header-icons-container ul li {
+        list-style: none; }
 
 .fa-brands {
   color: #05AFF2;
@@ -57,26 +58,26 @@ header {
 .fa-github {
   animation-delay: 800ms; }
 
-nav {
+.submenu {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   height: 5rem; }
-  nav .nav-logo-container {
+  .submenu .submenu-logo-container {
     margin-left: 2.5rem;
     display: flex;
     align-items: center; }
-    nav .nav-logo-container img {
+    .submenu .submenu-logo-container img {
       width: 4rem;
       margin-top: .8rem; }
-  nav .profile-link {
+  .submenu .submenu-profile-link {
     margin-right: 2.5rem;
     display: flex;
     align-items: center;
     justify-content: flex-end; }
-    nav .profile-link a {
+    .submenu .submenu-profile-link a {
       color: #0D0D0D;
       font-weight: bold; }
-      nav .profile-link a:hover {
+      .submenu .submenu-profile-link a:hover {
         border-bottom: 2px solid #0D0D0D; }
 
 /*global footer -except main.html*/
@@ -117,7 +118,6 @@ footer {
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
   height: 100%;
-  padding: 1rem;
   background-image: linear-gradient(to right bottom, #bf216b8c, #f2295f73), url(../images/pawel-nolbert-62OK9xwVA0c-unsplash.jpg);
   background-position: center;
   background-repeat: no-repeat;
