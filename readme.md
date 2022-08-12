@@ -11,6 +11,9 @@ o temporalmente:
 
 http://www.edi.monster/
 
+#### Por que edi monster? 
+Me salio en 1 dolar el dominio + 2 dolares de hospedaje con un cupon que tenia :D
+
 
 ## Blog Personal
 
