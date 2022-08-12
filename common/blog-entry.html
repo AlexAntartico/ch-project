@@ -9,21 +9,22 @@
 </head>
 <body>
     <header>
-        <nav class="topnav">
-            <div class="nav_search-container">
-                <figure class="header__searchbar__container">
-                    <img src="../images/smallLogo.png" alt="small test logo">
-                </figure>
-                <form action="/action_page.php">
-                    <input type="text" placeholder="Search.." name="search">
-                    <button type="search"><a href="#">Search</a> </button>
-                </form>
-            </div>
-            <div class="nav_buttons_container">
-                <button><a href="#">Join</a></button>
-                <button><a href="#">Login</a></button>
-            </div>
+        <nav class="header-icons-container">
+            <ul >
+                <li><a href="https://twitter.com/AlexAntartico"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/eduardo-g-mendoza-6291a3108/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="https://www.instagram.com/eduardoalgarciaa/"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://github.com/AlexAntartico"><i class="fa-brands fa-github"></i></a></li>
+            </ul>
         </nav>
+        <div class="submenu">
+            <section class="submenu-logo-container">
+                <a href="#"><img src="../images/smallLogo.png" alt="personal logo"></a>
+            </section>
+            <section class="submenu-profile-link">
+                <a href="../aboutme.html">Sobre Mi</a>
+            </section>
+        </div>
     </header>
     <main>
         <nav>
@@ -37,17 +38,13 @@
         </nav>
     </main>
     <footer>
-        <div>
-            <h3>Siguenos en:</h3>
-            <ul>
-                <li><a href="#">TIKTOK</a></li>
-                <li><a href="#">YOUTUBE</a></li>
-                <li><a href="#">TWITTER</a></li>
-                <li><a href="#">DISCORD</a></li>
-                <li><a href="#">INSTAGRAM</a></li>
-                <li><a href="#">LINKEDIN</a></li>
-            </ul>
+        <div class="footer-contact-containers">
+            <a href="../contacto.html">Contact Me</a> <!-- This will lead to bootstrap form -->
+            <a href="#">Placeholder</a>
         </div>
-    </footer> 
+        <div class="footer-love">
+            <h3>From Mexico, with <i class="fa-solid fa-heart"></i></h3>
+        </div>
+    </footer>
 </body>
 </html>
